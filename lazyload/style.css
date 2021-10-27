@@ -1,0 +1,22 @@
+body{
+	margin-top: 0; 
+	padding: 0;	
+	width:100%;
+}
+
+#gallery {
+display: flex; flex-wrap: wrap;
+
+}
+
+.gallery_element{
+	width:33.33%;
+	height:33.33vw;
+	background-size: cover;
+	transition: opacity 1s;
+}
+
+
+.lazy{
+	opacity: 0;
+}

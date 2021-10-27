@@ -1,0 +1,34 @@
+body{ 
+	margin: 0; padding: 0;color:#CCCCCC;
+}
+.panel{
+ 	/*vh donne la taille de la page*/
+	height: 100vh; 
+	overflow:hidden;
+	 position:relative;
+	display: flex;
+	 align-items: center;
+	  justify-content:center;
+	  border: 1px solid black;
+	  box-sizing: border-box;
+
+
+
+}
+.photo{
+	position: absolute;
+	 width: 120%; 
+	 height: 100%;
+	left: -10%;
+	 background-image:url(https://picsum.photos/id/1022/1000/);
+	background-size: cover;
+	 z-index: 0;
+}
+.title{
+	font-size: 110px; 
+	letter-spacing: 10px;
+	position: relative; 
+	 z-index: 1; 
+	text-align: center;
+}
+

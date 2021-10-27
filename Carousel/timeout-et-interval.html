@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<title>BONUS : Timeout et Interval</title>
+</head>
+
+<body>
+
+<div id = "afficheur">AFFICHEUR</div>
+
+<input type = "button" value = "STOP" onclick = "stop()" />
+
+<input type = "button" value = "GO" onclick = "go()" />
+    
+<input type = "button" value = "DELAI" onclick = "delai()" />
+    
+    <input type = "button" value = "ANNULER DELAI" onclick = "annuler_delai()" />
+
+<script>
+
+var monInterval , monDelai;
+
+var compteur = 0;
+
+function go() {
+
+monInterval = setInterval(
+	function() { //paramètre 1 : fonction ou instructions
+
+compteur++;
+
+document.getElementById('afficheur').innerHTML = compteur;
+
+},
+1000);// paramètre 2 :  durée de l'intervale en utilisation
+
+}
+
+function stop() {
+
+clearInterval(monInterval);
+
+}
+
+function delai() {
+   
+    monDelai = setTimeout(function() {
+
+compteur++;
+
+document.getElementById('afficheur').innerHTML = compteur;
+
+},3000);
+    
+}
+    
+function annuler_delai() {
+    clearTimeout(monDelai);
+}
+    
+</script>
+
+</body>
+
+</html>
